@@ -1,0 +1,16 @@
+@keyframes fire {
+    0% {
+      background-position: 1px 1px;
+    }
+    100% {
+      background-position: -768px 0; /* A largura total da sua imagem de sprite */
+    }
+  }
+  
+  .fire {
+    width: 220px; /* Largura de cada quadro da animação */
+    height: 250px; /* Altura de cada quadro da animação */
+    background-image: url('../imagens/fire.png'); /* Sua imagem de sprite */
+    animation: fire 1s steps(2) infinite; /* 12 frames na imagem */
+  }
+  

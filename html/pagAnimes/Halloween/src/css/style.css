@@ -1,0 +1,67 @@
+body {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    animation: blinkBackground 1s linear infinite;
+    background-color: #000; /* Cor de fundo inicial */
+    text-align: center;
+    color: #fff;
+  }
+  @keyframes blinkBackground {
+    0% {
+      background-color: #f1f0f0;
+    } /* Cor de fundo inicial */
+    50% {
+      background-color: #f1f1ea;
+    } /* Cor de fundo intermédia */
+    100% {
+      background-color: #f7f2f2;
+    } /* Volta à cor de fundo inicial */
+  }
+  @keyframes divi{
+   /* 0% {
+      background-color: #1b1b1b;
+    } /* Cor de fundo inicial */
+  /*  50% {
+      background-color: #0fcf5f;
+    } /* Cor de fundo intermédia */
+ /*   100% {
+      background-color: #e70d0d;
+    } Volta à cor de fundo inicial*/
+
+    background-image: url('../imagens/fire.png'); /* Sua imagem de sprite */
+    animation: fire 1s steps(2) infinite; /* 12 frames na imagem */
+  }
+  
+
+  h1 {
+    font-size: 54px;
+    color: black;
+  }
+
+  .pumpkin {
+    transition: transform 0.1s;
+  }
+
+  .pumpkin:hover {
+    transform: scale(1.9);
+    animation: blink 1s linear infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+.divImage{
+animation: divi 0.1s linear infinite;
+}
+
