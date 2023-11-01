@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Form1 from '../Pages/form/form-1';
+import Navbar from '../Components/Navbar/navbar';
 
 const Routering = () => {
   return (
@@ -8,7 +9,7 @@ const Routering = () => {
     <div>
     <div classename="Navbar">
      
-
+    <Navbar/>
      <Router>
       <Routes>
         <Route path='*' exact Component={Form1}/>
