@@ -14,11 +14,6 @@ import sanji from '../src/images/sanji.jpeg';
 import logo from './images/logoPiece.png';
 
 
-
-
-
-
-
 class App extends Component {
   constructor() {
     super();

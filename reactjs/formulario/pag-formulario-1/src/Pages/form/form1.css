@@ -1,0 +1,99 @@
+body {
+  background-color: rgba(177, 247, 189, 0.582);
+}
+.form1-app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.form-1 {
+  width: 30%;
+  padding: 25px;
+}
+.form-1 .bot-env {
+  padding: 5px;
+}
+
+.sigle-input {
+  padding: 12px;
+}
+
+.input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.input:hover {
+  transition: 0.3s ease-in-out;
+  border: 1px solid #566ce7;
+}
+
+.input + span {
+  color: #0056b3;
+  position: absolute;
+  margin: -20px 35px;
+  font-size: 16px;
+  transform: translateY(-50%);
+
+  pointer-events: none;
+  transition: 0.3s ease-out;
+  border-color: #566ce7;
+  /*  */
+}
+
+.input:focus + span {
+  font-size: 15px;
+
+  transition: 1s ease-in-out;
+  color: rgb(8, 3, 100);
+}
+
+.input:focus ~ span,
+text:focus ~ span,
+.input:valid ~ span,
+text:valid ~ span {
+  transform: translateY(-8px 2px);
+  margin: -55px 20px;
+  font-size: 15px;
+  border-color: #566ce7;
+  opacity: 1;
+}
+.input:-internal-autofill-selected, :active, :{
+  border-radius: none;
+  border-color: blue;
+}
+.input:focus,
+.input:active {
+  outline: none;
+  border-color: #566ce7;
+  box-shadow: 0 0 10px 5px #566ce788;
+}
+
+.button {
+  position: absolute;
+margin-left: 160px;
+  padding: 10px 80px;
+  background-color: #797f86;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+.button:focus,
+.button:active
+{
+  outline: none;
+  box-shadow: 0px 0px 10px 5px #566ce7;
+background-color: aquamarine;
+color: black;
+} 
+button:hover {
+  background-color: #566ce7;
+}
