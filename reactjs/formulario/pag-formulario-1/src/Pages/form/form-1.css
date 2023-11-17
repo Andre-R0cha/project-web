@@ -27,6 +27,10 @@ body {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 50px;
+
+  height: 34px;    
+    padding-left: 50px;
+ font-size: 25px;
 }
 
 .input:hover {
@@ -37,7 +41,7 @@ body {
 .input + span {
   color: #0056b3;
   position: absolute;
-  margin: -20px 35px;
+  margin: -35px 50px;
   font-size: 16px;
   transform: translateY(-50%);
 
@@ -64,7 +68,7 @@ text:valid ~ span {
   border-color: #566ce7;
   opacity: 1;
 }
-.input:-internal-autofill-selected, :active, :{
+.input:-internal-autofill-selected, :active{
   border-radius: none;
   border-color: blue;
 }

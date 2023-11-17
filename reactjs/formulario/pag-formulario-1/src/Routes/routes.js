@@ -2,6 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Form1 from '../Pages/form/form-1';
 import Navbar from '../Components/Navbar/navbar';
+import HomePage from '../Pages/home/HomePage';
+import Cadastro from '../Pages/Form2';
+
+
 
 const Routering = () => {
   return (
@@ -12,9 +16,9 @@ const Routering = () => {
     <Navbar/>
      <Router>
       <Routes>
-        <Route path='*' exact Component={Form1}/>
-        <Route path="/about" component={Form1} />
-          <Route path="/contact" component={Form1} />
+        <Route path='*' exact element={<Cadastro/>}/>
+        <Route path="/about" element={Form1} />
+          <Route path="/contact" element={HomePage} />
         
       </Routes>
      </Router>
