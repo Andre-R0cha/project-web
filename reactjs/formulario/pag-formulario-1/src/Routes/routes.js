@@ -17,7 +17,7 @@ const Routering = () => {
      <Router>
       <Routes>
         <Route path='*' exact element={<Cadastro/>}/>
-        <Route path="/about" element={Form1} />
+        <Route path="/about" element={<Form1/>} />
           <Route path="/contact" element={HomePage} />
         
       </Routes>

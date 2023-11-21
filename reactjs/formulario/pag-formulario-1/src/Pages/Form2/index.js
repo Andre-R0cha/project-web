@@ -5,7 +5,7 @@ import { validarEmail, validarNome, validarSenha, validarTelefone, validarConfir
 import Input from '../../Components/Input';
 import Botao from '../../Components/Botao';
 import { useNavigate } from 'react-router-dom'
-
+import styled from "styled-components";
 
 
 
@@ -24,6 +24,21 @@ const Cadastro = () => {
   const [loading, setLoading] = useState()
   const [form, setForm] = useState([])
   const navigate = useNavigate()
+
+
+  const Title = styled.h1`
+  position: relative;
+  align-items: flex-start;
+
+  /* justify-content: flex-end; */
+  padding-bottom: 20px;
+  font-size:2.5em;
+  `;
+// const Input = styled.Input`
+// width: 20px;
+// `;
+
+
 
   
   const handleSubmit = async (event) => {
@@ -68,7 +83,7 @@ const Cadastro = () => {
   return (
     <div style={styles.container}>
    <form>
-        <h1 style={styles.title}>Faça o seu Cadastro</h1>
+        <Title >Faça o seu Cadastro</Title>
         <Input
         style={styles.input}
           name='nome'

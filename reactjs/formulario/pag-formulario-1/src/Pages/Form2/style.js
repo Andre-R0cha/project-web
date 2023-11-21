@@ -1,21 +1,31 @@
+
+
 export const styles = {
+
+
+
   container: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    margin: '100px',
-  
-    padding: '50px',
+    margin: '5% 35%',  
+    padding: '5%',
     backgroundColor: 'rgba(200, 0, 100, 0.1)',
-    borderRadius: '2px',
+    borderRadius: '30px',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     width: '300px',
   },
-  title: {
-    alignItems: 'center',
-    fontSize: '2rem',
-    marginBottom: '40px',
-  },
+
+
+  // title: {
+  //   position: 'relative',
+  //   alignItems: 'flex-end',
+  //   // width: '1px',
+  //   // height: '120px',
+  //   fontSize: '2rem',
+  //   marginBottom: '30px',
+   
+  // },
   input: {
     marginBottom: '100px',
     padding: '8px',
@@ -35,4 +45,4 @@ export const styles = {
   },
 };
 
-var 
+// var 
