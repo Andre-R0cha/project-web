@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>NUTES</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- mapa -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Coordenadas do seu endereço
+    var coordenadas = [-7.217860, -35.873963]; // Substitua pelas coordenadas reais
+
+    // Criar mapa e adicionar à div com a classe "mapa"
+    var mapa = L.map('mapa').setView(coordenadas, 15); // 15 é o nível de zoom, ajuste conforme necessário
+
+    // Adicionar camada de mapa do OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(mapa);
+
+    // Adicionar marcador no endereço
+    L.marker(coordenadas).addTo(mapa)
+      .bindPopup('Localização da Empresa')
+      .openPopup();
+  </script>
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+</head>
+
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <nav class="navbar ">
+      <div class="menu-itens">
+        <a href="index.html" class="logo"><img src="assets/img/LOGO.svg" alt="" class="img-fluid"></a>
+        <ul class="menu">
+          <li><a class="nav-link active" href="index.html">HOME</a></li>
+          <li><a class="nav-link" href="sobre.html">SOBRE</a></li>
+          <li><a class="nav-link" href="#Laboratorios">LABORATÓRIOS</a></li>
+          <li><a class="nav-link" href="#Servicos">SERVIÇOS</a></li>
+          <li><a class="nav-link" href="#Produtos">PRODUTOS</a></li>
+          <li><a class="nav-link" href="#EMBRAPII">EMBRAPII</a></li>
+          <li><a class="nav-link" href="#Capacitacoes">CAPACITAÇÕES</a></li>
+          <li><a class="nav-link" href="#CONTATO">CONTATO</a></li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <img class="lupa" src="assets/img/social/lupa.png" />
+        <img class="brasil" src="assets/img/social/brasil.svg" />
+        <img class="line" src="assets/img/social/line.svg" />
+        <img class="instagram" src="assets/img/social/instagram.svg" />
+        <img class="facebook" src="assets/img/social/facebook.svg" />
+        <img class="linkedin" src="assets/img/social/linkedin.svg" />
+        <img class="twitter" src="assets/img/social/twitter.svg" />
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+
+
+
+
+  <!-- ======= carousel Section ======= -->
+  <section id="hero" class="">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img id="banner1" src="/assets/img/banners/1.gif" class="d-block w-100" alt="/assets/img/banners/1.gif">
+        </div>
+        <div class="carousel-item active">
+          <img id="banner2" src="/assets/img/banners/2.gif" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>REFERÊNCIA EM FABRICAÇÃO <br> DE DISPOSITIVOS MÉDICOS</h1>
+            <!-- Adicione outros elementos HTML conforme necessário -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- End carousel -->
+
+  <main id="main">
+
+    <!-- ======= unicaIct Section ======= -->
+    <section id="unicaIct" class="unicaIct section-bg">
+      <div class="row" data-aos="zoom-out-up">
+        <div><span class="span"> Somos o <strong>Único Centro de Tecnologia em Saúde</strong> com as
+            certificações</span></div>
+      </div>
+    </section>
+    <!-- End unicaIct Section -->
+
+    <!-- ======= Certificações Section ======= -->
+    <section id="certificacoes" class="certificacoes ">
+      <div class="certi" data-aos="fade-up">
+        <div class="row">
+          <div class=" col text-center" data-aos="zoom-in" data-aos-delay="100">
+            <img class="selos mt-4" src="assets/img/Certificacoes/cbpf.png">
+            <h3 class="mt-4">
+              <strong class="span2">MDSAP</strong><br>
+              Medical Device Single <br>
+              Audit Program
+            </h3>
+          </div>
+
+          <div class=" col text-center" data-aos="zoom-in" data-aos-delay="200">
+            <img class="selos mt-4" src="assets/img/Certificacoes/iso.png">
+
+            <h3 class="mt-4">
+              <strong class="span2">CBPF</strong><br>
+              Certificado de Boas Práticas<br> de Fabricação da Anvisa
+            </h3>
+
+          </div>
+
+          <div class=" col text-center" data-aos="zoom-in" data-aos-delay="300">
+            <img class="selos mt-4" src="assets/img/Certificacoes/mdsap.png">
+            <h3 class="mt-4">
+              <strong class="span2">ISO 13485</strong><br>
+              Produtos para Saúde <br>Sistemas de Gestão de<br>Qualidade
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Certificações Section -->
+
+    <!-- ======= Missão Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col text-center ">
+            <img class="mt-4 mb-4" src="assets/img/missao-1.svg">
+            <h3 class="fw-bold mb-4">MISSÃO</h3>
+            <p class="col text-center "> “Atuar no <strong>SETOR DA SAÚDE</strong> com <strong>EXCELÊNCIA</strong> e
+              <strong>INOVAÇÃO</strong>,
+              tornando soluções de ponta acessíveis, gerando
+              negócios com organizações públicas e privadas, atendendo às agências reguladores e sendo reconhecido
+              por fornecer produtos e serviços com <strong> SEGURANÇA</strong> e <strong>QUALIDADE</strong>.”
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Missão Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services ">
+      <div class="" data-aos="fade-up">
+        <div class="row flex-nowrap servicesRow">
+          <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <div class="imgs2">
+              <img src="assets/img/services/1.png">
+              <div class="text-antes">
+                <div class="traco2 text-esconde"></div>
+                <h4 class="text-esconde"><a href="">Serviços <br> de Tecnologias 3D</a></h4>
+
+              </div>
+              <div class="hover-text">
+                <div class="traco text-ativo text-padtop "></div>
+                <h4 class="text-ativo text-pad"><a href="">Serviços <br> de Tecnologias 3D</a></h4>
+                <p class="text-ativo">Atuamos no desenvolvimento de tecnologias avançadas para levar soluções inovadoras
+                  à sociedade</p>
+                <button class="text-ativo">SAIBA MAIS</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col " data-aos="fade-up" data-aos-delay="200">
+            <div class="imgs2">
+              <img src="assets/img/services/2.png">
+
+              <div class="text-antes">
+                <div class="traco2 text-esconde"></div>
+                <h4 class="text-esconde"><a href="">P&DI <br> de Dispositivos Médicos</a></h4>
+
+              </div>
+              <div class="hover-text">
+                <div class="traco text-ativo text-padtop"></div>
+                <h4 class="text-ativo text-pad"><a href="">P&DI <br> de Dispositivos Médicos</a></h4>
+                <p class="text-ativo">Atuamos no desenvolvimento de tecnologias avançadas para levar soluções inovadoras
+                  à sociedade</p>
+                <button class="text-ativo">SAIBA MAIS</button>
+              </div>
+            </div>
+          </div>
+          <div class="col " data-aos="fade-up" data-aos-delay="300">
+            <div class="imgs2">
+              <img src="assets/img/services/3.png">
+              <div class="text-antes">
+                <div class="traco2 text-esconde"></div>
+                <h4 class="text-esconde"><a href="">Usabilidade e Fatores<br> Humanos</a></h4>
+              </div>
+              <div class="hover-text">
+                <div class="traco text-ativo text-padtop"></div>
+                <h4 class="text-ativo text-pad"><a href="">Usabilidade e Fatores<br> Humanos</a></h4>
+                <p class="text-ativo">Atuamos no desenvolvimento de tecnologias avançadas para levar soluções inovadoras
+                  à sociedade</p>
+                <button class="text-ativo">SAIBA MAIS</button>
+              </div>
+            </div>
+          </div>
+          <div class="col " data-aos="fade-up" data-aos-delay="400">
+            <div class="imgs2">
+              <img src="assets/img/services/4.png">
+              <div class="text-antes">
+                <div class="traco2 text-esconde"></div>
+                <h4 class="text-esconde"><a href="">Desenvolvimento <br> de Software</a></h4>
+              </div>
+              <div class="hover-text">
+                <div class="traco text-ativo text-padtop"></div>
+                <h4 class="text-ativo text-pad"><a href="">Desenvolvimento <br> de Software</a></h4>
+                <p class="text-ativo">Atuamos no desenvolvimento de tecnologias avançadas para levar soluções inovadoras
+                  à sociedade</p>
+                <button class="text-ativo">SAIBA MAIS</button>
+              </div>
+            </div>
+          </div>
+          <div class="col " data-aos="fade-up" data-aos-delay="400">
+            <div class="imgs2">
+              <img src="assets/img/services/5.png">
+              <div class="text-antes">
+                <div class="traco2 text-esconde"></div>
+                <h4 class="text-esconde"><a href="">Serviços e Capacitações<br> Prestadas</a></h4>
+              </div>
+              <div class="hover-text">
+                <div class="traco text-ativo text-padtop"></div>
+                <h4 class="text-ativo text-pad"><a href="">Serviços e Capacitações<br> Prestadas</a></h4>
+                <p class="text-ativo">Atuamos no desenvolvimento de tecnologias avançadas para levar soluções inovadoras
+                  à sociedade</p>
+                <button class="text-ativo">SAIBA MAIS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why" class="why">
+      <img src="assets/img/banners/Prancheta.png" alt="Imagem de Fundo" class="background-image">
+      <div class="text-overlay">
+        <div class="certi2">
+          <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-md-4 col-sm-12 text-center">
+              <div class="col p-4">
+                <h1>1500</h1>
+                <h4>CIRURGIAS REALIZADAS ATRAVÉS DE GERENCIAMENTO DE SOFTWARES</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+              <div class="col p-4">
+                <h1>200</h1>
+                <h4>MONITORES MULTIPARAMÉTRICOS DISTRIBUÍDOS PELO PAÍS</h4>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+              <div class="col p-4">
+                <h1>5000</h1>
+                <h4>ACESSOS DIÁRIOS NOS SOFTWARES DESENVOLVIDOS</h4>
+              </div>
+            </div>
+          </div>
+          <h2>+ DE 2 MILHÕES</h2>
+          <h4>EM ISENÇÃO FISCAL ATRAVÉS DA LEI DA INFORMÁTICA</h4>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= parceiros Section ======= -->
+    <!-- <section id="topParceiros" class="topParceiros">
+      <div class="row" data-aos="zoom-out-up">
+        <div><span class="span"> <strong>CONHEÇA NOSSOS PARCEIROS</strong></span></div>
+      </div>
+    </section> -->
+
+    <section id="parceiros" class="parceiros">
+      <div class="row" data-aos="zoom-out-up">
+        <div class="col-3"><span class="text-parceiros"> PARCEIROS</span></div>
+        <div id="carouselExample" class="col-9 carousel slide mx-auto text-center" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/1.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/2.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/3.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/4.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/5.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/6.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/7.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/8.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/9.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/10.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/11.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/12.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/13.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/14.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/15.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/16.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/17.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/18.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/19.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/20.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/21.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/22.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/22.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/23.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/24.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/25.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/26.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/27.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/28.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/29.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/30.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/31.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/32.png" alt="Parceiro 5">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/33.png" alt="Parceiro 6">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/34.png" alt="Parceiro 7">
+                </div>
+                <div class="col">
+                  <img class="img-logo" src="assets/img/clients/31.png" alt="Parceiro 8">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End parceiros Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team ">
+      <div class="container-team" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/social/mensagens.svg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Está em busca de soluções para
+                  os seus projetos? </h4>
+                <span>Entre em contato conosco</span>
+                <button class="btn-card">FALE COM NOSSOS CONSULTORES</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/social/lampada.svg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Quer fazer parte do NUTES? </h4>
+                <span>Envie seu currículo para o nosso
+                  Banco de Talentos</span>
+                <button class="btn-card">ENVIE O SEU CURRÍCULO</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <section id="recent-posts" class="recent-posts">
+      <!-- Section Title -->
+      <div class="container-news section-title" data-aos="fade-up">
+        <h2>NOTÍCIAS DO NUTES</h2>
+      </div>
+      <!-- End Section Title -->
+      <div class="container">
+        <div class="row">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner justify-content-center">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 section-desc" data-aos="fade-up" data-aos-delay="100">
+                    <article>
+                      <div class="post-img">
+                        <img src="assets/img/blog/imagem2.png" alt="" class="img-fluid">
+                      </div>
+                      <p class="post-category">Software</p>
+                      <h2 class="title">
+                        <a href="blog-details.html">Software desenvolvido pelo NUTES é usado no Programa
+                          Opera Paraíba do Governo do Estado</a>
+                      </h2>
+                      <p class="post-more">Saiba mais ></p>
+                    </article>
+                  </div>
+                  <div class="col-md-4 section-desc" data-aos="fade-up" data-aos-delay="200">
+                    <article>
+                      <div class="post-img">
+                        <img src="assets/img/blog/imagem3.png" alt="" class="img-fluid">
+                      </div>
+                      <p class="post-category">EMBRAPII</p>
+                      <h2 class="title">
+                        <a href="blog-details.html">Rally das Unidades EMBRAPII – Rota Paraíba está com
+                          inscrições abertas para o processo</a>
+                      </h2>
+                      <p class="post-more">Saiba mais ></p>
+                    </article>
+                  </div>
+                  <div class="col-md-4 section-desc" data-aos="fade-up" data-aos-delay="300">
+                    <article>
+                      <div class="post-img">
+                        <img src="assets/img/blog/imagem1.png" alt="" class="img-fluid">
+                      </div>
+                      <p class="post-category">Auditoria</p>
+                      <h2 class="title">
+                        <a href="blog-details.html">Nutes realiza auditoria interna para verificar o seu
+                          Sistema de Gestão da Qualidade</a>
+                      </h2>
+                      <p class="post-more">Saiba mais ></p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- End recent posts list -->
+      </div>
+    </section>
+
+
+
+
+
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container-footer">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <div class="row ">
+              <div class="col align-self-end footer-contacted">
+                <img id="logo-uepb" src="assets/img/social/uepb.png" class="" alt="">
+              </div>
+              <div class="col align-self-end">
+                <img id="logo-nutes" src="assets/img/social/nutes.png" class="" alt="">
+              </div>
+            </div>
+            <div class="col">
+              <p>Centro de referência para pesquisa, desenvolvimento, produção, inovação e prestação aplicada de
+                serviços
+                tecnológicos relacionados à saúde.</p>
+              <h4 id="footerh4">Conecte-se ao NUTES:</h4>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>CONTATO</h4>
+            <ul>
+              <!-- <li><i class="bi bi-geo-alt-fill"></i> <a href="#">Rua Baraúnas, 351
+                  Bairro Universitário
+                  Campina Grande-PB
+                  CEP: 58429-500</a></li> -->
+              <li><i class="bi bi-telephone-fill"></i> <a href="#">(83) 3315-3336
+                </a></li>
+              <li><i class="bi bi-envelope-fill"></i> <a href="#">nutes@setor.uepb.edu.br</a></li>
+              <li><i class="bi bi-mortarboard-fill"></i> <a href="#">nutes.treinamentos.com</a></li>
+              <li><i class="bi bi-stopwatch-fill"></i> <a href="#">Segunda a Sexta-feira
+                  08 às 17h </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>PÁGINAS</h4>
+            <ul>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">HOME</a></li>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">SOBRE</a></li>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">LABORATÓRIOS</a></li>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">SOLUÇÕES</a></li>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">PRODUTOS</a></li>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">EMBRAPII</a></li>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">PÓS-GRADUAÇÃO</a></li>
+              <li id="footer-li"><i class="bx bx-chevron-right"></i> <a href="#">CONTATO</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>VISITE-NOS</h4>
+            <div id="link-container">
+              <i id="link-icon" class="bi bi-geo-alt-fill"></i>
+              <a id="link-a" href="#">Rua Baraúnas, 351 Bairro Universitário
+                Campina Grande-PB CEP: 58429-500</a>
+            </div> <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.273687658504!2d-35.91986602422403!3d-7.209586570783234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aea07fa8198fb5%3A0xa068ecb98d0d6a19!2sR.%20Bara%C3%BAnas%2C%20351%20-%20Universit%C3%A1rio%2C%20Campina%20Grande%20-%20PB%2C%2058429-500!5e0!3m2!1sen!2sbr!4v1699622496643!5m2!1sen!2sbr"
+              width="400" height="300" style="border:0;margin-top: 20px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom clearfix">
+      <div class="footer-texts-container">
+        <p class="">Desenvolvido pelo <a href="#">NUTES</a></p>
+        <div class="">&copy; Copyright 2023 <strong><span>NUTES</span></strong>. All Rights Reserved</div>
+        <div class="">Revisão 00</div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+ 
+
+</body>
+
+</html>
